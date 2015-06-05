@@ -6,7 +6,7 @@ import subprocess, webbrowser
 # target_search_from_input
 
 def query(text):
-    url = 'http://www.tyrellsys.com/' + text.replace(' ', '/')
+    url = 'http://www.tyrellsys.com/' + text.replace(' ', '%20')
     webbrowser.open_new_tab(url)
 
 class TargetPackageSelectedCommand(sublime_plugin.TextCommand):
